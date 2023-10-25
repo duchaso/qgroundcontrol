@@ -145,6 +145,8 @@ iOSBuild {
     }
 }
 
+CONFIG += DISABLE_VIDEOSTREAMING
+
 #
 # Plugin configuration
 #

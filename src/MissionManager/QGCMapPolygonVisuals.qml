@@ -563,6 +563,19 @@ Item {
                 onClicked:          kmlOrSHPLoadDialog.openForLoad()
                 visible:            !mapPolygon.traceMode
             }
+
+            QGCButton {
+                _horizontalPadding: 0
+
+//                iconSource: "/res/my_ico.png"
+//                iconLeft: true
+//                horizontalAlignment: Text.AlignRight
+                text:               qsTr("AR Mode")
+                onClicked: {
+                    my_view.visible = true;
+                }
+                visible:            !mapPolygon.traceMode
+            }
         }
     }
 

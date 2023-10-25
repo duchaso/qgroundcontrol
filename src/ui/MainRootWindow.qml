@@ -717,4 +717,12 @@ ApplicationWindow {
             }
         }
     }
+
+    MyView {
+        id: my_view
+
+        width: mainWindow.width
+        height: mainWindow.height
+        onVisibleChanged: toolbar.visible = !toolbar.visible // ugly but works :_(
+    }
 }
